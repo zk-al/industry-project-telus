@@ -1,0 +1,23 @@
+import './Header.scss';
+import { Link } from 'react-router-dom';
+
+function Header() {
+    return (
+        <header className='header'>
+            <div className='logo'>
+                <img src='../../assets/images/Telus-Logo.svg' alt='Telus logo' className='logo__img' />
+            </div>
+            <nav className='navbar'>
+                <Link to={'/'} className='navbar__link navbar__link--streaming'>
+                    <p className='navbar__text'>Streaming</p>
+                </Link>
+                <Link to={'/'} className='navbar__link navbar__link--tv'>
+                    <p className='navbar__text'>TV</p>
+                </Link>
+                <Link to={'/'} className='navbar__link navbar__link--theme-packs'>
+                    <p className='navbar__text'>Theme Packs</p>
+                </Link>
+            </nav>
+        </header>
+    );
+}
