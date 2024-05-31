@@ -19,10 +19,15 @@
 .modal-container-home {
     text-align: end;
     margin-top: -4rem;
+    margin-bottom: 4rem;
 }
 
 .cart-container {
     display: flex;
     justify-content: end;
     align-content: start;
+}
+
+.price-calculator{
+    margin: 0 5%;
 }

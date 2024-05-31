@@ -10,15 +10,20 @@ function PriceCalc({ spTotalPrice, tpTotalPrice, scTotalPrice }) {
   ).toFixed(2);
 
   return (
-    <div>
-      
-
+    <div className="price-calculator">
       <div className="cart-container">
-        <div className="title-container"><h3 className="title">Price Summary:</h3></div>
-        <div className="subtotal-container"><p className="price">{combinedTotalPrice}</p></div>
-        
+        <div className="title-container">
+          <h3 className="title">Price Summary:</h3>
+        </div>
+        <div className="subtotal-container">
+          <p className="price">{combinedTotalPrice}</p>
+        </div>
       </div>
-      <div className="modal-container-home"><div><Modal /></div></div>
+      <div className="modal-container-home">
+        <div>
+          <Modal />
+        </div>
+      </div>
     </div>
   );
 }

@@ -1,6 +1,5 @@
 import "./App.scss";
 import { useState } from "react";
-import Modal from "./components/Modal/Modal";
 import Header from "./components/Header/Header";
 import { BrowserRouter } from "react-router-dom";
 import StreamingPartners from "./components/StreamingService/StreamingService";
@@ -99,7 +98,6 @@ function App() {
           tpTotalPrice={tpTotalPrice}
           scTotalPrice={scTotalPrice}
         />
-        <Modal />
       </BrowserRouter>
     </div>
   );
