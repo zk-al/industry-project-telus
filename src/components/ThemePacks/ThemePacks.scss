@@ -1,0 +1,64 @@
+.themepacks {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+  
+    &__title {
+      text-align: center;
+      padding: 50px 0;
+      animation: slideInFromLeft 1s ease-in-out;
+    }
+  
+    &__container {
+      padding: 0 5%;
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column;
+    }
+  
+    &__list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+      margin: 0 5%;
+    }
+  
+    &__card {
+      width: 20%;
+      padding: 0 2.5%;
+      border: 0.0625rem solid rgb(255, 192, 238);
+      box-shadow: 5px 5px 5px 2px #cbcacb;
+      margin: 2.5% 0;
+    }
+  
+    &__card-front {
+      height: 10rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  
+    &__logo {
+      width: 10rem;
+    }
+  
+    &__card-back {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      margin: 0 10%;
+      height: 8rem;
+    }
+  
+    &__total {
+      margin: 0 5%;
+      padding: 5%;
+    }
+  }
+  
+  .selected {
+    border: 0.125rem solid rgb(245, 102, 207);
+    background-color: #adadad1d;
+  }
+  
