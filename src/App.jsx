@@ -1,6 +1,7 @@
 import "./App.scss";
 import { useState } from "react";
 import Header from "./components/Header/Header";
+import { BrowserRouter } from "react-router-dom";
 import StreamingPartners from "./components/StreamingService/StreamingService";
 import PriceCalc from "./components/PriceCalc/PriceCalc";
 import ThemePacks from "./components/ThemePacks/ThemePacks";
@@ -74,27 +75,29 @@ function App() {
 
   return (
     <div className="App">
-      <Header />
-      <TvChannels
-        selectedChannel={selectedChannel}
-        handleSelectedChannel={handleSelectedChannel}
-        scTotalPrice={scTotalPrice}
-      />
-      <StreamingPartners
-        selectedPartners={selectedPartners}
-        handleSelectPartner={handleSelectPartner}
-        spTotalPrice={spTotalPrice}
-      />
-      <ThemePacks
-        selectedPacks={selectedPacks}
-        handleSelectPack={handleSelectPack}
-        tpTotalPrice={tpTotalPrice}
-      />
-      <PriceCalc
-        spTotalPrice={spTotalPrice}
-        tpTotalPrice={tpTotalPrice}
-        scTotalPrice={scTotalPrice}
-      />
+      <BrowserRouter>
+        <Header />
+        <TvChannels
+          selectedChannel={selectedChannel}
+          handleSelectedChannel={handleSelectedChannel}
+          scTotalPrice={scTotalPrice}
+        />
+        <StreamingPartners
+          selectedPartners={selectedPartners}
+          handleSelectPartner={handleSelectPartner}
+          spTotalPrice={spTotalPrice}
+        />
+        <ThemePacks
+          selectedPacks={selectedPacks}
+          handleSelectPack={handleSelectPack}
+          tpTotalPrice={tpTotalPrice}
+        />
+        <PriceCalc
+          spTotalPrice={spTotalPrice}
+          tpTotalPrice={tpTotalPrice}
+          scTotalPrice={scTotalPrice}
+        />
+      </BrowserRouter>
     </div>
   );
 }

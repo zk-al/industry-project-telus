@@ -1,14 +1,7 @@
 import { useEffect, useState } from "react";
 import "./PriceCalc.scss";
 
-function PriceCalc({
-  selectedPartners,
-  spTotalPrice,
-  selectedPacks,
-  tpTotalPrice,
-  selectedChannel,
-  scTotalPrice,
-}) {
+function PriceCalc({ spTotalPrice, tpTotalPrice, scTotalPrice }) {
   const combinedTotalPrice = (
     parseFloat(spTotalPrice) +
     parseFloat(tpTotalPrice) +
