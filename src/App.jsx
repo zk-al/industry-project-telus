@@ -3,6 +3,7 @@ import Header from "./components/Header/Header";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import HomePage from "./pages/HomePage/HomePage";
 import StreamingPartners from "./components/StreamingService/StreamingService";
+import ThemePacks from "./components/ThemePacks/ThemePacks";
 
 function App() {
   return (
@@ -13,8 +14,8 @@ function App() {
             <Routes>
                 <Route path="/" element={<HomePage />} />
                 <Route path="/streaming" element={<StreamingPartners />}/>
+                <Route path="/theme-packs" element={<ThemePacks />}/>
                 <Route path="/tv" />
-                <Route path="/theme-packs" />
             </Routes>
         </BrowserRouter>
   </div>
