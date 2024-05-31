@@ -99,7 +99,6 @@ function App() {
           tpTotalPrice={tpTotalPrice}
           scTotalPrice={scTotalPrice}
         />
-        <Modal />
       </BrowserRouter>
     </div>
   );
