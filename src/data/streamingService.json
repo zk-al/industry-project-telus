@@ -1,0 +1,38 @@
+[
+    {
+        "id": 1,
+        "name": "Netflix",
+        "imageURL": "https://pngimg.com/uploads/netflix/small/netflix_PNG25.png",
+        "pricing": "$8.99"
+    },
+    {
+        "id": 2,
+        "name": "Hulu",
+        "imageURL": "https://download.logo.wine/logo/Hulu/Hulu-Logo.wine.png",
+        "pricing": "$5.99"
+    },
+    {
+        "id": 3,
+        "name": "Amazon Prime Video",
+        "imageURL": "https://static.vecteezy.com/system/resources/previews/019/766/188/original/prime-video-logo-prime-video-icon-transparent-logo-free-png.png",
+        "pricing": "$8.99"
+    },
+    {
+        "id": 4,
+        "name": "Disney+",
+        "imageURL": "https://cdn.icon-icons.com/icons2/2657/PNG/256/disney_plus_icon_161064.png",
+        "pricing": "$7.99"
+    },
+    {
+        "id": 5,
+        "name": "HBO Max",
+        "imageURL": "https://logos-world.net/wp-content/uploads/2022/01/HBO-Max-Logo-2019.png",
+        "pricing": "$9.99"
+    },
+    {
+        "id": 6,
+        "name": "Apple TV+",
+        "imageURL": "https://cdn.iconscout.com/icon/free/png-256/free-apple-tv-5336082-4497663.png",
+        "pricing": "$4.99"
+    }
+]
