@@ -1,13 +1,23 @@
 import "./App.scss";
+import Header from "./components/Header/Header";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import HomePage from "./pages/HomePage/HomePage";
+import StreamingPartners from "./components/StreamingService/StreamingService";
 import PriceCalc from "./components/PriceCalc/PriceCalc";
-
-import footerImage from "./assets/images/telus-footer.png";
 
 function App() {
   return (
     <div className="App">
-      <PriceCalc />
-      <img src={footerImage} alt="Image of the Telus Footer" />
+      <BrowserRouter>
+        <Header />
+        <StreamingPartners />
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/streaming" element={<StreamingPartners />} />
+          <Route path="/tv" />
+          <Route path="/theme-packs" />
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }
