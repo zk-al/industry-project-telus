@@ -17,6 +17,7 @@ function App() {
           <Route path="/tv" />
           <Route path="/theme-packs" />
         </Routes>
+        <PriceCalc />
       </BrowserRouter>
     </div>
   );

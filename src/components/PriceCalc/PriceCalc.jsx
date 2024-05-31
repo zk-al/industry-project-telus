@@ -68,6 +68,7 @@ function PriceCalc() {
   };
 
   const totalPrice = calculatedPrice(selectedItems);
+
   return (
     <div>
       {demo.map((channel) => (
@@ -80,8 +81,25 @@ function PriceCalc() {
               : ""
           }
         >
-          {channel.price}
+          {channel.name}
         </p>
+      ))}
+
+      <h2>TV</h2>
+      {selectedItems.map((channel) => (
+        <p key={channel.id}>{channel.name}</p>
+      ))}
+
+      <h2>Streaming</h2>
+
+      {selectedItems.map((channel) => (
+        <p key={channel.id}>{channel.name}</p>
+      ))}
+
+      <h2>Bundles</h2>
+
+      {selectedItems.map((channel) => (
+        <p key={channel.id}>{channel.name}</p>
       ))}
 
       <p>{totalPrice.toFixed(2)}</p>
