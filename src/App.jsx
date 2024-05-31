@@ -6,6 +6,7 @@ import HomePage from "./pages/HomePage/HomePage";
 import StreamingPartners from "./components/StreamingService/StreamingService";
 import PriceCalc from "./components/PriceCalc/PriceCalc";
 import ThemePacks from "./components/ThemePacks/ThemePacks";
+import TvChannels from "./components/tvchannels/tvchannels";
 
 function App() {
   /* --------------------------- STREAMING SERVICES --------------------------- */
