@@ -4,35 +4,35 @@
       "name": "A&E",
       "imageUrl": "https://images.ctfassets.net/evnrpfa1vdk4/577c86WR8suScCo2SMeKg2/91c9b750feed352f542bbf1c46dbbbb0/AE.svg?fm=png",
       "category": "Prime Time",
-      "price": "$6.99"
+      "price": "$5.99"
     },
     {
       "id": 2,
       "name": "AMC",
       "imageUrl": "https://images.ctfassets.net/evnrpfa1vdk4/68ltlIpks0yGskeeKy4W8W/b876e156f6f8ec09af319a5cf449dc27/amc.svg?fm=png",
       "category": "Prime Time",
-      "price": "$6.99"
+      "price": "$10.99"
     },
     {
       "id": 3,
       "name": "CTV Drama Channel",
       "imageUrl": "https://images.ctfassets.net/evnrpfa1vdk4/1bHtXaCsPa6qekmOgiSGeu/dc339e21fc5a4bba0f2cc849f9fc1189/CTV_Drama_Channel_2019.svg?fm=png",
       "category": "Prime Time",
-      "price": "$6.99"
+      "price": "$7.99"
     },
     {
       "id": 4,
       "name": "TLC",
       "imageUrl": "https://images.ctfassets.net/evnrpfa1vdk4/2ZN9g8j17iC4sEEeE68ggY/a66cdd8da058f8c3abf06678de90e927/TLC_logo_rgb__1_.jpg?w=90&q=80&fm=webp",
       "category": "Prime Time",
-      "price": "$6.99"
+      "price": "$9.99"
     },
     {
       "id": 5,
       "name": "FX",
       "imageUrl": "https://images.ctfassets.net/evnrpfa1vdk4/5vX53MjZPqyQOoSoa0oCAW/8445721469b9f0f01e0af818fe6e37db/FXX-Logo.png?w=90&q=80&fm=webp",
       "category": "Blockbusters",
-      "price": "$6.99"
+      "price": "$4.99"
     },
     {
       "id": 6,
@@ -46,21 +46,21 @@
       "name": "Adult Swim",
       "imageUrl": "https://images.ctfassets.net/evnrpfa1vdk4/4iakaidAM0a4cKyScmQCic/e8fa9cdab060f0bd35d573e14f891e41/Adult_Swim_2003_logo.svg?fm=png",
       "category": "Blockbusters",
-      "price": "$6.99"
+      "price": "$10.99"
     },
     {
       "id": 8,
       "name": "Crime Investigation",
       "imageUrl": "https://images.ctfassets.net/evnrpfa1vdk4/4foFyxNUGsqYO2WKGmmEKU/f0cc1a287554c4c9615e16958519f9b7/crimeInvestigation.svg?fm=png",
       "category": "Blockbusters",
-      "price": "$6.99"
+      "price": "$8.99"
     },
     {
       "id": 9,
       "name": "Fox Racing",
       "imageUrl": "https://images.ctfassets.net/evnrpfa1vdk4/z4Jq7w2n71lPC7wgA8tID/7ddf9b028c1201797b6a5ae9139663df/FOX_SPORTS_RACING.svg?fm=png",
       "category": "More Sports",
-      "price": "$6.99"
+      "price": "$8.99"
     },
     {
       "id": 10,
@@ -74,21 +74,21 @@
       "name": "NBA TV Canada",
       "imageUrl": "https://images.ctfassets.net/evnrpfa1vdk4/57ouNusq2Bpb0xT71nL0bj/af2ce6183a4bec5f4e292afded48b7fb/NBA_TV_Canada.svg?fm=png",
       "category": "More Sports",
-      "price": "$6.99"
+      "price": "$8.99"
     },
     {
       "id": 12,
       "name": "REV TV",
       "imageUrl": "https://images.ctfassets.net/evnrpfa1vdk4/3WCitc5szErRVUFNqfPtvz/1a453c4d5a3a37c6002731549c2bd754/REV_TV_Logo.jpg?w=90&q=80&fm=webp",
       "category": "More Sports",
-      "price": "$6.99"
+      "price": "$4.99"
     },
     {
       "id": 13,
       "name": "Makeful",
       "imageUrl": "https://images.ctfassets.net/evnrpfa1vdk4/6v2DVwWOiq86KeYi4n0FuK/ea5ea83959b1eab20f277e9dae469d52/Makeful_TV.png?w=90&q=80&fm=webp",
       "category": "Living",
-      "price": "$6.99"
+      "price": "$5.99"
     },
     {
       "id": 14,
@@ -102,13 +102,13 @@
       "name": "Food Network",
       "imageUrl": "https://images.ctfassets.net/evnrpfa1vdk4/7mxk40GbsWaKmmgq0sGqaG/48c7220aee46f85bb4755ee51edbf08b/Food_Network_Canada.svg?fm=png",
       "category": "Living",
-      "price": "$6.99"
+      "price": "$7.99"
     },
     {
       "id": 16,
       "name": "HGTV",
       "imageUrl": "https://images.ctfassets.net/evnrpfa1vdk4/4C6S3rMGScMy0OG2o2KsIA/f359af356e008d248da60a451816cdb7/hgtv.svg?fm=png",
       "category": "Living",
-      "price": "$6.99"
+      "price": "$8.99"
     }
   ]

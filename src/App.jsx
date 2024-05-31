@@ -4,6 +4,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import HomePage from "./pages/HomePage/HomePage";
 import StreamingPartners from "./components/StreamingService/StreamingService";
 import ThemePacks from "./components/ThemePacks/ThemePacks";
+import TvChannels from "./components/tvchannels/tvchannels";
 
 function App() {
   return (
@@ -18,6 +19,10 @@ function App() {
                 <Route path="/tv" />
             </Routes>
         </BrowserRouter>
+  
+
+
+
   </div>
   );
 }
