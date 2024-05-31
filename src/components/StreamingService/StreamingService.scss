@@ -2,7 +2,6 @@
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #f4f4f4;
 
   &__title {
     text-align: center;
@@ -38,9 +37,9 @@
   &__card {
     width: 20%;
     padding: 0 1%;
-    border: .125rem solid rgb(217, 217, 217);
+    border: .125rem solid rgba(227,230,232,1.00);
+    background-color: rgba(244, 244, 247, 1.00);
     border-radius: .25rem;
-    box-shadow: 2px 2px 5px 2px #cbcacb;
     margin: 2.5%;
   }
 
@@ -83,6 +82,5 @@
 }
 
 .selected {
-  border: 0.125rem solid rgb(137, 54, 153);
-  background-color: #adadad1d;
+  border: 0.125rem solid #457e22;
 }
