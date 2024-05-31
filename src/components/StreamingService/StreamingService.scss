@@ -30,6 +30,10 @@
     border: 0.0625rem solid rgb(255, 192, 238);
     box-shadow: 5px 5px 5px 2px #cbcacb;
     margin: 2.5% 0;
+
+    &.filter-hide {
+        display: none;
+    }
   }
 
   &__card-front {
