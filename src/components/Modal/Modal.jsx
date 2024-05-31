@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import "./Modal.scss";
-import exitIcon from "../assets/clear-svgrepo-com.svg";
-import netflixLogo from "../assets/Netflix-Logo.wine.svg";
-import nbaTvLogo from "../assets/NBA_TV_Canada-Logo.wine.svg";
-import fxLogo from "../assets/FX_(Canadian_TV_channel)-Logo.wine.svg";
+import exitIcon from "../../assets/clear-svgrepo-com.svg";
+import netflixLogo from "../../assets/Netflix-Logo.wine.svg";
+import nbaTvLogo from "../../assets/NBA_TV_Canada-Logo.wine.svg";
+import fxLogo from "../../assets/FX_(Canadian_TV_channel)-Logo.wine.svg";
 // import telusLogo from "../assets/Telus-Logo.svg"
 
 function Modal() {
