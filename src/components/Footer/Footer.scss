@@ -1,0 +1,17 @@
+
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    padding-left: 0.3rem;
+    font-family: Arial, Helvetica, sans-serif;
+
+    &__logo {
+        width: 18rem;
+    }
+
+    &__text {
+        padding-right: 1rem;
+    }
+}
