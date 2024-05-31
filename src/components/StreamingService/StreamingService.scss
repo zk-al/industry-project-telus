@@ -41,7 +41,12 @@
     background-color: rgba(244, 244, 247, 1.00);
     border-radius: .25rem;
     margin: 2.5%;
-  }
+
+    // this is new
+    &.filter-hide {
+        display: none;
+    }
+}
 
   &__card-front {
     height: 10rem;
