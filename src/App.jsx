@@ -5,6 +5,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import HomePage from "./pages/HomePage/HomePage";
 import StreamingPartners from "./components/StreamingService/StreamingService";
 import PriceCalc from "./components/PriceCalc/PriceCalc";
+import ThemePacks from "./components/ThemePacks/ThemePacks";
 
 function App() {
   const [selectedPartners, setSelectedPartners] = useState([]);
@@ -41,7 +42,7 @@ function App() {
           <Route path="/" element={<HomePage />} />
           <Route path="/streaming" element={<StreamingPartners />} />
           <Route path="/tv" />
-          <Route path="/theme-packs" />
+          <Route path="/theme-packs" element={<ThemePacks />} />
         </Routes>
         <PriceCalc
           selectedPartners={selectedPartners}
