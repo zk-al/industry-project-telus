@@ -2,28 +2,11 @@ import "../StreamingService/StreamingService.scss";
 import StreamingServiceData from "../../data/streamingService.json";
 import React, { useState } from "react";
 
-const StreamingPartners = () => {
-  const [selectedPartners, setSelectedPartners] = useState([]);
-  const [totalPrice, setTotalPrice] = useState(0);
-
-  const handleSelectPartner = (partner) => {
-    let updatedSelectedPartners;
-    if (selectedPartners.includes(partner)) {
-      updatedSelectedPartners = selectedPartners.filter(
-        (p) => p.id !== partner.id
-      );
-    } else {
-      updatedSelectedPartners = [...selectedPartners, partner];
-    }
-    setSelectedPartners(updatedSelectedPartners);
-
-    const total = updatedSelectedPartners.reduce(
-      (sum, p) => sum + parseFloat(p.pricing.slice(1)),
-      0
-    );
-    setTotalPrice(total.toFixed(2));
-  };
-
+const StreamingPartners = ({
+  selectedPartners,
+  handleSelectPartner,
+  spTotalPrice,
+}) => {
   return (
     <div className="streaming">
       <h2 className="streaming__title">Streaming Partners</h2>
@@ -53,7 +36,7 @@ const StreamingPartners = () => {
         </div>
       </div>
       <div className="streaming__total-price">
-        <h3 className="streaming__total">Total Price: ${totalPrice}</h3>
+        <h3 className="streaming__total">Total Price: ${spTotalPrice}</h3>
       </div>
     </div>
   );

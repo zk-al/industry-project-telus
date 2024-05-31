@@ -44,65 +44,57 @@ const demo = [
   },
 ];
 
-function PriceCalc() {
-  const [selectedItems, setSelectedItems] = useState([]);
+function PriceCalc({ selectedPartners, handleSelectedPartners, spTotalPrice }) {
+  // const [selectedItems, setSelectedItems] = useState([]);
 
-  // Getting clickedItem and put into selectedItems array when clicked
-  // When clicked again remove clickedItem from selectedItems array
-  const handleItemClick = (clickedItem) => {
-    setSelectedItems((prevSelectedItems) =>
-      prevSelectedItems.some((item) => item.id === clickedItem.id)
-        ? prevSelectedItems.filter((item) => item.id !== clickedItem.id)
-        : [...prevSelectedItems, clickedItem]
-    );
-  };
+  // // Getting clickedItem and put into selectedItems array when clicked
+  // // When clicked again remove clickedItem from selectedItems array
+  // const handleItemClick = (clickedItem) => {
+  //   setSelectedItems((prevSelectedItems) =>
+  //     prevSelectedItems.some((item) => item.id === clickedItem.id)
+  //       ? prevSelectedItems.filter((item) => item.id !== clickedItem.id)
+  //       : [...prevSelectedItems, clickedItem]
+  //   );
+  // };
 
-  console.log(selectedItems);
+  // console.log(selectedItems);
 
-  const calculatedPrice = (selectedItems) => {
-    if (selectedItems !== " ") {
-      return selectedItems.reduce((sum, item) => sum + item.price, 0);
-    } else {
-      console.log("Arrayempty");
-    }
-  };
+  // const calculatedPrice = (selectedItems) => {
+  //   if (selectedItems !== " ") {
+  //     return selectedItems.reduce((sum, item) => sum + item.price, 0);
+  //   } else {
+  //     console.log("Arrayempty");
+  //   }
+  // };
 
-  const totalPrice = calculatedPrice(selectedItems);
+  // const totalPrice = calculatedPrice(selectedItems);
 
   return (
     <div>
-      {demo.map((channel) => (
-        <p
+      <h2>Summary </h2>
+      <h3>TV</h3>
+      {/* {selectedItems.map((channel) => (
+        <p key={channel.id}>{channel.name}</p>
+      ))} */}
+
+      <h3>Streaming</h3>
+
+      {selectedPartners.map((channel) => (
+        <img
           key={channel.id}
-          onClick={() => handleItemClick(channel)}
-          className={
-            selectedItems.some((selectedItem) => selectedItem.id === channel.id)
-              ? "highlight"
-              : ""
-          }
-        >
-          {channel.name}
-        </p>
+          className="image"
+          src={channel.imageURL}
+          alt="logo"
+        />
       ))}
 
-      <h2>TV</h2>
-      {selectedItems.map((channel) => (
+      <h3>Bundles</h3>
+
+      {/* {selectedItems.map((channel) => (
         <p key={channel.id}>{channel.name}</p>
-      ))}
+      ))} */}
 
-      <h2>Streaming</h2>
-
-      {selectedItems.map((channel) => (
-        <p key={channel.id}>{channel.name}</p>
-      ))}
-
-      <h2>Bundles</h2>
-
-      {selectedItems.map((channel) => (
-        <p key={channel.id}>{channel.name}</p>
-      ))}
-
-      <p>{totalPrice.toFixed(2)}</p>
+      {/* <p>{totalPrice.toFixed(2)}</p> */}
     </div>
   );
 }
