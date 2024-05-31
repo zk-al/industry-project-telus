@@ -1,38 +1,38 @@
 [
-    {
-        "id": 1,
-        "name": "Prime Time",
-        "imageURL": "../assets/images/themepacks/themepack-primetime.jpg",
-        "pricing": "$8.99"
-    },
-    {
-        "id": 2,
-        "name": "Sports",
-        "imageURL": "../assets/images/themepacks/themepack-sports.jpg",
-        "pricing": "$11.99"
-    },
-    {
-        "id": 3,
-        "name": "Living",
-        "imageURL": "../assets/images/themepacks/themepack-living.jpg",
-        "pricing": "$8.99"
-    },
-    {
-        "id": 4,
-        "name": "World & Beyond",
-        "imageURL": "../assets/images/themepacks/themepack-world-beyond.jpg",
-        "pricing": "$8.99"
-    },
-    {
-        "id": 5,
-        "name": "Blockbusters",
-        "imageURL": "../assets/images/themepacks/themepack-blockbusters.jpg",
-        "pricing": "$10.99"
-    },
-    {
-        "id": 6,
-        "name": "Explore",
-        "imageURL": "../assets/images/themepacks/themepack-explore.jpg",
-        "pricing": "$8.99"
-    }
+  {
+    "id": 1,
+    "name": "Prime Time",
+    "image": "/themepacks/themepack-primetime.jpg",
+    "pricing": "$8.99"
+  },
+  {
+    "id": 2,
+    "name": "Sports",
+    "image": "/themepacks/themepack-sports.jpg",
+    "pricing": "$11.99"
+  },
+  {
+    "id": 3,
+    "name": "Living",
+    "image": "/themepacks/themepack-living.jpg",
+    "pricing": "$8.99"
+  },
+  {
+    "id": 4,
+    "name": "World & Beyond",
+    "image": "/themepacks/themepack-world-beyond.jpg",
+    "pricing": "$8.99"
+  },
+  {
+    "id": 5,
+    "name": "Blockbusters",
+    "image": "/themepacks/themepack-blockbusters.jpg",
+    "pricing": "$10.99"
+  },
+  {
+    "id": 6,
+    "name": "Explore",
+    "image": "/themepacks/themepack-explore.jpg",
+    "pricing": "$8.99"
+  }
 ]
