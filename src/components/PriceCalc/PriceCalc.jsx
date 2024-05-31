@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import "./PriceCalc.scss";
+import Modal from "../Modal/Modal";
 
 function PriceCalc({ spTotalPrice, tpTotalPrice, scTotalPrice }) {
   const combinedTotalPrice = (
@@ -10,16 +11,14 @@ function PriceCalc({ spTotalPrice, tpTotalPrice, scTotalPrice }) {
 
   return (
     <div>
-      <h3>TV</h3>
+      
 
-      <h3>Streaming</h3>
-
-      <h3>Bundles</h3>
-
-      <div>
-        <h3>Price Sumamry</h3>
-        <p>{combinedTotalPrice}</p>
+      <div className="cart-container">
+        <div className="title-container"><h3 className="title">Price Summary:</h3></div>
+        <div className="subtotal-container"><p className="price">{combinedTotalPrice}</p></div>
+        
       </div>
+      <div className="modal-container-home"><div><Modal /></div></div>
     </div>
   );
 }

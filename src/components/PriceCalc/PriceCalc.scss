@@ -5,3 +5,24 @@
 .image {
     width: 2rem;
 }
+
+.title {
+    margin-right: 2rem;
+    line-height: 1.75;
+}
+
+.price {
+    line-height: 1rem;
+    font-size: 1.5rem;
+}
+
+.modal-container-home {
+    text-align: end;
+    margin-top: -4rem;
+}
+
+.cart-container {
+    display: flex;
+    justify-content: end;
+    align-content: start;
+}
