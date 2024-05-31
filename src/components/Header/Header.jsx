@@ -1,11 +1,12 @@
 import './Header.scss';
+import telusLogo from '../../assets/images/Telus-Logo.svg.png';
 import { Link } from 'react-router-dom';
 
 function Header() {
     return (
         <header className='header'>
             <div className='logo'>
-                <img src='../../assets/images/Telus-Logo.svg' alt='Telus logo' className='logo__img' />
+                <img src={telusLogo} alt='Telus logo' className='logo__img' />
             </div>
 
             <nav className='navbar'>

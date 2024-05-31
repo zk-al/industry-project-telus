@@ -1,0 +1,13 @@
+.header {
+    .logo {
+        &__img {}
+    }
+
+    .navbar {
+        &__link {}
+        &__link--streaming {}
+        &__link--tv {}
+        &__link--theme-packs {}
+        &__text {}
+    }
+}
