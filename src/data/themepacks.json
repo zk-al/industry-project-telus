@@ -1,0 +1,38 @@
+[
+    {
+        "id": 1,
+        "name": "Prime Time",
+        "imageURL": "/assets",
+        "pricing": "$8.99"
+    },
+    {
+        "id": 2,
+        "name": "Sports",
+        "imageURL": "",
+        "pricing": "$5.99"
+    },
+    {
+        "id": 3,
+        "name": "Living",
+        "imageURL": "",
+        "pricing": "$8.99"
+    },
+    {
+        "id": 4,
+        "name": "World & Beyond",
+        "imageURL": "",
+        "pricing": "$7.99"
+    },
+    {
+        "id": 5,
+        "name": "Blockbusters",
+        "imageURL": "",
+        "pricing": "$9.99"
+    },
+    {
+        "id": 6,
+        "name": "Explore",
+        "imageURL": "",
+        "pricing": "$4.99"
+    }
+]
