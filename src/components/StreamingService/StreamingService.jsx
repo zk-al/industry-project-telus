@@ -72,9 +72,8 @@ const ChannelPartners = () => {
         setTotalPrice(total.toFixed(2));
     };
 
-    const handleCategoryChange = () => {
-        const dropdown = document.querySelector('filter__input');
-        setSelectedCategory(dropdown.value);
+    const handleCategoryChange = (event) => {
+        setSelectedCategory(event.target.value);
     }
 
     return (
@@ -89,20 +88,17 @@ const ChannelPartners = () => {
                         Filter By Category:{' '}
                     </label>
                     <select name="channelFilter" className="filter__input" onChange={handleCategoryChange}>
-                        <option value="blockbuster">Blockbuster</option>
-                        <option value="primetime">Prime Time</option>
-                        <option value="moreSports">More Sports</option>
-                        <option value="living">Living</option>
+                        <option value="BlockBusters">Blockbusters</option>
+                        <option value="Prime Time">Prime Time</option>
+                        <option value="More Sports">More Sports</option>
+                        <option value="Living">Living</option>
                     </select>
                 </div>
                 <div className="streaming__list">
                     {channelData.map((partner) => (
                         <div
                             key={partner.id}
-                            className={`streaming__card 
-                                ${selectedPartners.includes(partner) ? 'selected' : ''} 
-                                ${selectedCategory === partner.category ? '' : "filter-hide"}
-                            `}
+                            className={`streaming__card ${selectedPartners.includes(partner) ? 'selected' : ''} ${selectedCategory === partner.category ? '' : "filter-hide"}`}
                             onClick={() => handleSelectPartner(partner)}
                         >
                             <div className="streaming__card-front">
