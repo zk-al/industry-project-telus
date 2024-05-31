@@ -2,19 +2,19 @@
     {
         "id": 1,
         "name": "Prime Time",
-        "imageURL": "../assets/images/themepacks/themepack-blockbusters.jpg",
+        "imageURL": "../assets/images/themepacks/themepack-primetime.jpg",
         "pricing": "$8.99"
     },
     {
         "id": 2,
         "name": "Sports",
-        "imageURL": "../assets/images/themepacks/themepack-explore.jpg",
+        "imageURL": "../assets/images/themepacks/themepack-sports.jpg",
         "pricing": "$11.99"
     },
     {
         "id": 3,
         "name": "Living",
-        "imageURL": "../assets/images/themepacks/themepack-explore.jpg",
+        "imageURL": "../assets/images/themepacks/themepack-living.jpg",
         "pricing": "$8.99"
     },
     {
