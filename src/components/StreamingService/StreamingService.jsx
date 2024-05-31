@@ -38,7 +38,7 @@ const StreamingPartners = ({
         </div>
       </div>
       <div className="streaming__total-price">
-        <h3 className="streaming__total">Total Price: ${totalPrice}</h3>
+        <h3 className="streaming__total">Total Price: ${spTotalPrice}</h3>
       </div>
     </div>
   );
