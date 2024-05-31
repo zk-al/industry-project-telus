@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import "./PriceCalc.scss";
 
 const demo = [
@@ -44,7 +44,12 @@ const demo = [
   },
 ];
 
-function PriceCalc({ selectedPartners, handleSelectedPartners, spTotalPrice }) {
+function PriceCalc({
+  selectedPartners,
+  spTotalPrice,
+  selectedPacks,
+  tpTotalPrice,
+}) {
   // const [selectedItems, setSelectedItems] = useState([]);
 
   // // Getting clickedItem and put into selectedItems array when clicked
@@ -68,6 +73,9 @@ function PriceCalc({ selectedPartners, handleSelectedPartners, spTotalPrice }) {
   // };
 
   // const totalPrice = calculatedPrice(selectedItems);
+  const combinedTotalPrice = (
+    parseFloat(spTotalPrice) + parseFloat(tpTotalPrice)
+  ).toFixed(2);
 
   return (
     <div>
@@ -90,11 +98,11 @@ function PriceCalc({ selectedPartners, handleSelectedPartners, spTotalPrice }) {
 
       <h3>Bundles</h3>
 
-      {/* {selectedItems.map((channel) => (
-        <p key={channel.id}>{channel.name}</p>
-      ))} */}
+      {selectedPacks.map((pack) => (
+        <img key={pack.id} className="image" src={pack.imageURL} alt="logo" />
+      ))}
 
-      {/* <p>{totalPrice.toFixed(2)}</p> */}
+      <p>{combinedTotalPrice}</p>
     </div>
   );
 }
