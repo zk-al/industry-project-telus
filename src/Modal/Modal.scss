@@ -1,3 +1,7 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 body.active-modal {
     overflow-y: hidden;
 }
@@ -61,22 +65,24 @@ body.active-modal {
 .button-container {
     display: flex;
     justify-content: flex-end;
-    margin-right: 1rem;
-    margin-top: 2rem;
+    margin: 2rem 1rem;
 }
 
 .content-container {
     display: flex;
     justify-content: space-between;
+    margin-top: 2rem;
+    
 }
 
 .card {
     &-container {
-    border: 1px solid black;
     border-radius: 4px;
-    margin: 1rem;
+    margin: 1rem 1rem 0 1rem;
     height: 20rem;
     width: 20rem;
+    background-color: #F7F7F8;
+    padding-bottom: 0;
     }
     &-title {
     padding-left: 1rem;    
@@ -88,4 +94,20 @@ body.active-modal {
     padding-left: 1rem;
     margin-top: 2rem;    
     }
+    &-img {
+        width: 100%;
+        border-radius: 4px;
+        // border: 1px solid black;
+    }
+    &-content-container {
+        border-radius: 4px;
+        border: 1px solid #D8D8D8;
+        padding-bottom: 1.5rem;
+    }
 }
+
+.modal-title {
+    color: #4B286D;
+    margin-left: 1rem;
+}
+
