@@ -16,7 +16,7 @@ function Modal() {
   return (
     <>
       <button className="btn-modal" onClick={toggleModal}>
-        Open
+        Cart
       </button>
 
       {modal && (
@@ -39,7 +39,7 @@ function Modal() {
               <div className="card-content-container">
                 <h2 className="card-title">Netflix</h2>
                 <h4 className="card-subtitle">Streaming Service</h4>
-                <h3 className="card-price">$7.99</h3>
+                <h3 className="card-price">$8.99</h3>
               </div>
             </div>
             <div className="card-container">
@@ -47,9 +47,9 @@ function Modal() {
                 <img className="card-img" src={nbaTvLogo} alt="" />
               </div>
               <div className="card-content-container">
-                <h2 className="card-title">Sportsnet</h2>
+                <h2 className="card-title">NBA TV</h2>
                 <h4 className="card-subtitle">Sports</h4>
-                <h3 className="card-price">$2.99</h3>
+                <h3 className="card-price">$8.99</h3>
               </div>
             </div>
             <div className="card-container">
@@ -57,13 +57,14 @@ function Modal() {
                 <img className="card-img" src={fxLogo} alt="" />
               </div>
               <div className="card-content-container">
-                <h2 className="card-title">CBC</h2>
-                <h4 className="card-subtitle">News Channel</h4>
-                <h3 className="card-price">$2.99</h3>
+                <h2 className="card-title">FX Network</h2>
+                <h4 className="card-subtitle">Dramas</h4>
+                <h3 className="card-price">$4.99</h3>
               </div>
             </div>
             </div>
             <div className="button-container">
+              <h3 className="cart-price">Subtotal: $22.97</h3>
               <button className="checkout-button">
                 Checkout
               </button>
