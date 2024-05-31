@@ -1,0 +1,91 @@
+body.active-modal {
+    overflow-y: hidden;
+}
+
+.btn-modal {
+    padding: 10px 20px;
+    display: block;
+    margin: 100px auto 0;
+    font-size: 18px;
+}
+
+.modal, .overlay {
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: fixed;
+}
+
+.overlay {
+    background: rgba(244, 244, 247, 0.97);
+    opacity: 1;
+}
+.modal-content {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    line-height: 1.4;
+    background: rgb(255, 255, 255);
+    padding: 14px 28px;
+    border-radius: 4px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 8px 0px;
+    max-width: 600px;
+    min-width: 300px;
+}
+
+.close-modal {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 1rem 7px;
+    height: 40px;
+    width: 40px;
+}
+
+.checkout-button {
+    padding: 12px 32px;
+    background-color: rgb(43, 128, 0);
+    color: rgb(255, 255, 255);
+    min-width: 144px;
+    border-color: rgb(43, 128, 0);
+    border-width: 0px;
+    border-radius: 32px;
+    max-width: 100%;
+    transition: background-color 200ms ease 0s, border-color 200ms ease 0s;
+}
+
+.button-container {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 1rem;
+    margin-top: 2rem;
+}
+
+.content-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card {
+    &-container {
+    border: 1px solid black;
+    border-radius: 4px;
+    margin: 1rem;
+    height: 20rem;
+    width: 20rem;
+    }
+    &-title {
+    padding-left: 1rem;    
+    }
+    &-subtitle {
+    padding-left: 1rem;    
+    }
+    &-price {
+    padding-left: 1rem;
+    margin-top: 2rem;    
+    }
+}
