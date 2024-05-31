@@ -2,12 +2,22 @@
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #f4f4f4;
 
   &__title {
     text-align: center;
-    padding: 50px 0;
-    animation: slideInFromLeft 1s ease-in-out;
+    padding-top: 50px;
+    font-size: 3rem;
+    font-weight: 400;
+    color: rgb(137, 54, 153);
+    margin-bottom: 0;
+  }
+
+  &__para{
+    text-align: center;
+    font-size: 1.5rem;
+    color: gray;
+    margin-top: 0.5rem;
+    margin-bottom: 3rem;
   }
 
   &__container {
@@ -21,20 +31,22 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    margin: 0 5%;
+    margin: 0 10%;
   }
 
   &__card {
     width: 20%;
-    padding: 0 2.5%;
-    border: 0.0625rem solid rgb(255, 192, 238);
-    box-shadow: 5px 5px 5px 2px #cbcacb;
-    margin: 2.5% 0;
+    padding: 0 1%;
+    border: .125rem solid rgba(227,230,232,1.00);
+    background-color: rgba(244, 244, 247, 1.00);
+    border-radius: .25rem;
+    margin: 2.5%;
 
+    // this is new
     &.filter-hide {
         display: none;
     }
-  }
+}
 
   &__card-front {
     height: 10rem;
@@ -55,6 +67,19 @@
     height: 8rem;
   }
 
+  &__provider {
+    font-size: 1.25rem;
+    font-weight: 500;
+    color: rgb(39, 44, 44);
+  }
+
+  &__price{
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: rgb(44, 39, 42);
+    margin-top: 0;
+  }
+
   &__total {
     margin: 0 5%;
     padding: 5%;
@@ -62,6 +87,5 @@
 }
 
 .selected {
-  border: 0.125rem solid rgb(245, 102, 207);
-  background-color: #adadad1d;
+  border: 0.125rem solid #457e22;
 }
