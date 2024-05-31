@@ -21,7 +21,8 @@ const StreamingPartners = () => {
   
     return (
       <div className="streaming">
-        <h2 className="streaming__title">Streaming Partners</h2>
+        <h2 className="streaming__title">Streaming Service</h2>
+        <p className="streaming__para">Stream to your heart's content</p>
         <div className="streaming__container">
         <div className="streaming__list">
           {StreamingServiceData.map(partner => (
