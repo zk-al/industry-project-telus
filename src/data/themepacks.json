@@ -2,37 +2,37 @@
     {
         "id": 1,
         "name": "Prime Time",
-        "imageURL": "/assets",
+        "imageURL": "../assets/images/themepacks/themepack-blockbusters.jpg",
         "pricing": "$8.99"
     },
     {
         "id": 2,
         "name": "Sports",
-        "imageURL": "",
-        "pricing": "$5.99"
+        "imageURL": "../assets/images/themepacks/themepack-explore.jpg",
+        "pricing": "$11.99"
     },
     {
         "id": 3,
         "name": "Living",
-        "imageURL": "",
+        "imageURL": "../assets/images/themepacks/themepack-explore.jpg",
         "pricing": "$8.99"
     },
     {
         "id": 4,
         "name": "World & Beyond",
-        "imageURL": "",
-        "pricing": "$7.99"
+        "imageURL": "../assets/images/themepacks/themepack-world-beyond.jpg",
+        "pricing": "$8.99"
     },
     {
         "id": 5,
         "name": "Blockbusters",
-        "imageURL": "",
-        "pricing": "$9.99"
+        "imageURL": "../assets/images/themepacks/themepack-blockbusters.jpg",
+        "pricing": "$10.99"
     },
     {
         "id": 6,
         "name": "Explore",
-        "imageURL": "",
-        "pricing": "$4.99"
+        "imageURL": "../assets/images/themepacks/themepack-explore.jpg",
+        "pricing": "$8.99"
     }
 ]
