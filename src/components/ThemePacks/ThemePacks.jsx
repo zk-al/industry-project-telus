@@ -19,7 +19,7 @@ const ThemePacks = ({ selectedPacks, handleSelectPack, tpTotalPrice }) => {
               <div className="themepacks__card-front">
                 <img
                   className="themepacks__logo"
-                  src={pack.imageURL}
+                  src={pack.image}
                   alt={pack.name}
                 />
               </div>

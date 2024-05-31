@@ -1,8 +1,6 @@
 import "./App.scss";
 import { useState } from "react";
 import Header from "./components/Header/Header";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import HomePage from "./pages/HomePage/HomePage";
 import StreamingPartners from "./components/StreamingService/StreamingService";
 import PriceCalc from "./components/PriceCalc/PriceCalc";
 import ThemePacks from "./components/ThemePacks/ThemePacks";
@@ -51,48 +49,52 @@ function App() {
     setTpTotalPrice(total.toFixed(2));
   };
 
+  /* ------------------------------- TV CHANNELS ------------------------------ */
+  const [selectedChannel, setSelectedChannel] = useState([]);
+  const [scTotalPrice, setScTotalPrice] = useState(0);
+
+  const handleSelectedChannel = (channel) => {
+    let updatedChannels;
+    if (selectedChannel.includes(channel)) {
+      updatedChannels = selectedChannel.filter(
+        (c) => channel.id !== channel.id
+      );
+    } else {
+      updatedChannels = [...selectedChannel, channel];
+    }
+
+    setSelectedChannel(updatedChannels);
+
+    const total = updatedChannels.reduce(
+      (sum, c) => sum + parseFloat(c.price.slice(1)),
+      0
+    );
+    setScTotalPrice(total.toFixed(2));
+  };
+
   return (
     <div className="App">
-      <BrowserRouter>
-        <Header />
-        <StreamingPartners
-          selectedPartners={selectedPartners}
-          handleSelectPartner={handleSelectPartner}
-          spTotalPrice={spTotalPrice}
-        />
-        <Routes>
-          <Route path="/" element={<HomePage />} />
-          <Route
-            path="/streaming"
-            element={
-              <StreamingPartners
-                selectedPartners={selectedPartners}
-                handleSelectPartner={handleSelectPartner}
-                spTotalPrice={spTotalPrice}
-              />
-            }
-          />
-          <Route path="/tv" />
-          <Route
-            path="/theme-packs"
-            element={
-              <ThemePacks
-                selectedPacks={selectedPacks}
-                handleSelectPack={handleSelectPack}
-                tpTotalPrice={tpTotalPrice}
-              />
-            }
-          />
-        </Routes>
-        <PriceCalc
-          selectedPartners={selectedPartners}
-          // handleSelectPartner={handleSelectPartner}
-          spTotalPrice={spTotalPrice}
-          selectedPacks={selectedPacks}
-          // handleSelectPack={handleSelectPack}
-          tpTotalPrice={tpTotalPrice}
-        />
-      </BrowserRouter>
+      <Header />
+      <TvChannels
+        selectedChannel={selectedChannel}
+        handleSelectedChannel={handleSelectedChannel}
+        scTotalPrice={scTotalPrice}
+      />
+      <StreamingPartners
+        selectedPartners={selectedPartners}
+        handleSelectPartner={handleSelectPartner}
+        spTotalPrice={spTotalPrice}
+      />
+      <ThemePacks
+        selectedPacks={selectedPacks}
+        handleSelectPack={handleSelectPack}
+        tpTotalPrice={tpTotalPrice}
+      />
+      <PriceCalc
+        spTotalPrice={spTotalPrice}
+        tpTotalPrice={tpTotalPrice}
+        scTotalPrice={scTotalPrice}
+      />
     </div>
   );
 }
