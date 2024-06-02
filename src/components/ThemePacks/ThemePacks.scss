@@ -1,0 +1,88 @@
+.themepacks {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  
+    &__title {
+      text-align: center;
+      padding-top: 50px;
+      font-size: 3rem;
+      font-weight: 400;
+      color: rgb(137, 54, 153);
+      margin-bottom: 0;
+    }
+  
+    &__para{
+      text-align: center;
+      font-size: 1.5rem;
+      color: gray;
+      margin-top: 0.5rem;
+      margin-bottom: 3rem;
+    }
+  
+    &__container {
+      padding: 0 5%;
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column;
+    }
+  
+    &__list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+      margin: 0 10%;
+    }
+  
+    &__card {
+      width: 20%;
+      padding: 0 1%;
+      border: .125rem solid rgba(227,230,232,1.00);
+      background-color: rgba(244, 244, 247, 1.00);
+      border-radius: .25rem;
+      margin: 2.5%;
+  }
+  
+    &__card-front {
+      height: 10rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  
+    &__logo {
+      width: 70%;
+      margin-top: 1.5rem;
+    }
+  
+    &__card-back {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      margin: 0 10%;
+      height: 8rem;
+    }
+  
+    &__provider {
+      font-size: 1.25rem;
+      font-weight: 500;
+      color: rgb(39, 44, 44);
+    }
+  
+    &__price{
+      font-size: 1.5rem;
+      font-weight: 600;
+      color: rgb(44, 39, 42);
+      margin-top: 0;
+    }
+  
+    &__total {
+      margin: 0 5%;
+      padding: 5%;
+    }
+  }
+  
+  .selected {
+    border: 0.125rem solid #457e22;
+  }
+  
